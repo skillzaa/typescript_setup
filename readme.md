@@ -25,3 +25,5 @@
     "pretest": "npm run buildTest && npm run buildDist"
   },
   e.g "npm run buildTest" , "npm run buildDist" etc
+  - One of the script among the above scripts is named "pretest" this will run before the script "test" is run. This way we can chain running of tasks that we used to do in gulp"
+  - 
