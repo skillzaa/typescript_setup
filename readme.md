@@ -4,7 +4,7 @@
     -   To use "rollup" for final out put ie from src folder into dist folder.
     - To use "jest" for unit testing.
 -   All the code goes into "typescript" forlder. When we want to compile we just run "tsc" command on the terminal and all the .ts files are compiled and moved into "src" folder.
-- The src folder should never have anything that needs to be manually ammended or can not be over written. The src folder is just a compilation folder and not for coding or manual work.
+- The src folder should never have anything that needs to be manually ammended or can not be over written. The src folder is just a compilation folder and not for coding or manual work.You should be able to delete anything in src folder without any loass to the project.similarly all the written code should just be in typescript folder and no where else.
 - The main folders on root directory are:
     -   src
     -   typescript
