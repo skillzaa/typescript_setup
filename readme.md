@@ -1,0 +1,14 @@
+## This is a starting setup for a Typescript based project
+- Our main targets are : 
+    -   To use "typescript" compiler to compile ts files into js.
+    -   To use "rollup" for final out put ie from src folder into dist folder.
+    - To use "jest" for unit testing.
+-   All the code goes into "typescript" forlder. When we want to compile we just run "tsc" command on the terminal and all the .ts files are compiled and moved into "src" folder.
+- The src folder should never have anything that needs to be manually ammended or can not be over written. The src folder is just a compilation folder and not for coding or manual work.
+- The main folders on root directory are:
+    -   src
+    -   typescript
+    -   dist
+    -   tests
+- if we use rollup normally we use the configuration file "rollup.config.js". But this allow us to use just one configuration. We use this option with "rollup -c" command on terminal.
+- to use more configuration of rollup we will have to create config files with different names and then add commands into package.json so that we can run different configs for tests etc.
