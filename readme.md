@@ -26,4 +26,7 @@
   },
   e.g "npm run buildTest" , "npm run buildDist" etc
   - One of the script among the above scripts is named "pretest" this will run before the script "test" is run. This way we can chain running of tasks that we used to do in gulp"
-  - 
+  - To use this system you have to compile in 2 steps
+    - first step is typeing "tsc" or we can used "tsc --watch" and can leave it running in a terminal instance.
+    - second step is to run "npm run buildTest or buildDist". after that we can test or distribute.
+    - if we directly run "npm run test" it will pre run "buildTest" also

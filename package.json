@@ -8,7 +8,7 @@
     "buildDist": "rollup -c rollup.config.dist.js",
     "dev": "rollup -c -w",
     "test": "jest ",
-    "pretest": "npm run buildTest && npm run buildDist"
+    "pretest": "npm run buildTest"
   },
   "author": "",
   "license": "ISC",

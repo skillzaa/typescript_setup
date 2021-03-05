@@ -4,6 +4,6 @@ export default {
 //	plugins: [terser()],
 	output: {
 	  file: 'testsrc/bilzaa2d.js',
-	  format: 'es',
+	  format: 'cjs', //es
 	}
   };
