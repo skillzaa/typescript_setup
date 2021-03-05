@@ -10,5 +10,18 @@
     -   typescript
     -   dist
     -   tests
+    -   testsrc : files in required (common js) format to be used with jest.
 - if we use rollup normally we use the configuration file "rollup.config.js". But this allow us to use just one configuration. We use this option with "rollup -c" command on terminal.
 - to use more configuration of rollup we will have to create config files with different names and then add commands into package.json so that we can run different configs for tests etc.
+- you can install all the dependencies listed in "config.json" by "npm install".
+- once can check the version by commands like "npm -v", "typescript -v" , "jest -v" etc
+- the file "rollup.config.t.js" is named this and not "rollup.config.test.js" since when we put test in the name the jest start to check it.
+- any script located in the script section of config.json like the follwoing can be run using "npm run xxx".
+"scripts": {
+    "buildTest": "rollup -c rollup.config.t.js",
+    "buildDist": "rollup -c rollup.config.dist.js",
+    "dev": "rollup -c -w",
+    "test": "jest ",
+    "pretest": "npm run buildTest && npm run buildDist"
+  },
+  e.g "npm run buildTest" , "npm run buildDist" etc
